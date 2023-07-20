@@ -1,0 +1,102 @@
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 450px;
+> img{
+    width: auto;
+    height: 150px;
+}
+> h1{
+    font-size: 25px;
+    color: darken($color: white, $amount: 20%);
+}
+}
+.invalid-page{
+    @extend .welcome;
+    height: 430px;
+> img{
+    width: auto;
+    height: 150px;
+}
+> h1{
+    font-size: 25px;
+    color: darken($color: white, $amount: 20%);
+}
+> h3{
+    color: lighten($color: red, $amount: 30%);
+}
+}
+.weather-page{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+.location{
+    display: flex;
+    margin-top: 10px;
+    width: 93%;
+    justify-content: center;
+> img{
+    height: 30px;
+}
+> h3{
+    color: white;
+    font-size: 23px;
+    margin-top: 5px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+}
+.weather-icon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    > img {
+        height: auto;
+        width: 180px;
+    }
+> h2{
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+}
+> p{
+    color: white;
+    margin-top: 3px;
+}
+}
+.weather-update{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+.weatherlist{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 150px;
+     flex-direction: column;
+     background-color: lighten($color: #000000, $amount: 30%);
+     border-radius: 5px;
+     border: none;
+> img{
+   width: 50px;
+}
+> h3{
+    font-size: 13px;
+    color: white;
+}
+> h5{
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;
+}
+}
+}
+}
